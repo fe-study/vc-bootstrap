@@ -9,10 +9,10 @@ export default function (router) {
       name: 'home',
       component: vApp,
       subRoutes: {
-        '/': {
+        //'/': {
           //name: 'home',
           //component: vIndex
-        }
+        //}
       }
     }
   })

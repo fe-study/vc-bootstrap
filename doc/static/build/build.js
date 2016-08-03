@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "./doc/static";
+/******/ 	__webpack_require__.p = "./";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -13051,10 +13051,10 @@
 	      name: 'home',
 	      component: _index2.default,
 	      subRoutes: {
-	        '/': {
-	          //name: 'home',
-	          //component: vIndex
-	        }
+	        //'/': {
+	        //name: 'home',
+	        //component: vIndex
+	        //}
 	      }
 	    }
 	  });
@@ -13084,11 +13084,11 @@
 	
 	var _vue2 = _interopRequireDefault(_vue);
 	
-	var _index = __webpack_require__(11);
+	var _index = __webpack_require__(15);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
-	__webpack_require__(12);
+	__webpack_require__(16);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -13107,10 +13107,11 @@
 /* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(9)
+	__webpack_require__(9)
+	module.exports = __webpack_require__(13)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(10)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(14)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -13118,10 +13119,10 @@
 	if (!hotAPI.compatible) return
 	var id = "-!babel!./../../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./helloworld.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./helloworld.vue","-!vue-html-loader!./../../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./helloworld.vue"], function () {
+	module.hot.accept(["-!babel!./../../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./helloworld.vue","-!vue-html-loader!./../../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-5db9f3c7&file=helloworld.vue!./../../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./helloworld.vue"], function () {
 	var newOptions = require("-!babel!./../../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./helloworld.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./helloworld.vue")
+	var newTemplate = require("-!vue-html-loader!./../../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-5db9f3c7&file=helloworld.vue!./../../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./helloworld.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13129,95 +13130,22 @@
 
 /***/ },
 /* 9 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	// <template>
-	// 	<div class="title">
-	// 		<h2>{{title}}</h2>
-	// 	</div>
-	// </template>
-	// <script>
-	exports.default = {
-		data: function data() {
-			return {
-				title: 'vc-bootstrap!'
-			};
-		}
-	};
-	// </script>
-
-/***/ },
-/* 10 */
-/***/ function(module, exports) {
-
-	module.exports = "<div class=\"title\">\n\t\t<h2>{{title}}</h2>\n\t</div>";
-
-/***/ },
-/* 11 */
-/***/ function(module, exports) {
-
-	module.exports = function anonymous(locals, escape, include, rethrow) {
-	    rethrow = rethrow || function rethrow(err, str, filename, lineno) {
-	        var lines = str.split("\n");
-	        var start = Math.max(lineno - 3, 0);
-	        var end = Math.min(lines.length, lineno + 3);
-	        var context = lines.slice(start, end).map(function(line, i) {
-	            var curr = i + start + 1;
-	            return (curr == lineno ? " >> " : "    ") + curr + "| " + line;
-	        }).join("\n");
-	        err.path = filename;
-	        err.message = (filename || "ejs") + ":" + lineno + "\n" + context + "\n\n" + err.message;
-	        throw err;
-	    };
-	    escape = escape || function(markup) {
-	        return markup == undefined ? "" : String(markup).replace(_MATCH_HTML, encode_char);
-	    };
-	    var _ENCODE_HTML_RULES = {
-	        "&": "&amp;",
-	        "<": "&lt;",
-	        ">": "&gt;",
-	        '"': "&#34;",
-	        "'": "&#39;"
-	    }, _MATCH_HTML = /[&<>'"]/g;
-	    function encode_char(c) {
-	        return _ENCODE_HTML_RULES[c] || c;
-	    }
-	    var __line = 1, __lines = '<div class="container-fluid">\n    <v-hello></v-hello>\n</div>', __filename = "src/pages/index/index.ejs";
-	    try {
-	        var __output = [], __append = __output.push.bind(__output);
-	        with (locals || {}) {
-	            __append('<div class="container-fluid">\n    <v-hello></v-hello>\n</div>');
-	            __line = 3;
-	        }
-	        return __output.join("");
-	    } catch (e) {
-	        rethrow(e, __lines, __filename, __line);
-	    }
-	}
-
-/***/ },
-/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(13);
+	var content = __webpack_require__(10);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(15)(content, {});
+	var update = __webpack_require__(12)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/less-loader/index.js!./index.less", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/less-loader/index.js!./index.less");
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-5db9f3c7&file=helloworld.vue&scoped=true!./../../../node_modules/less-loader/index.js!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./helloworld.vue", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-5db9f3c7&file=helloworld.vue&scoped=true!./../../../node_modules/less-loader/index.js!./../../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./helloworld.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -13227,21 +13155,21 @@
 	}
 
 /***/ },
-/* 13 */
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(14)();
+	exports = module.exports = __webpack_require__(11)();
 	// imports
 	
 	
 	// module
-	exports.push([module.id, "", ""]);
+	exports.push([module.id, ".title[_v-5db9f3c7] {\n  padding-top: 100px;\n  text-align: center;\n}\n.title h2[_v-5db9f3c7] {\n  font-size: 48px;\n}\nul[_v-5db9f3c7] {\n  padding: 0;\n  margin: 20px 0;\n}\nul li[_v-5db9f3c7] {\n  list-style: none;\n  margin: 0;\n  padding: 5;\n  font-size: 18px;\n}\n", ""]);
 	
 	// exports
 
 
 /***/ },
-/* 14 */
+/* 11 */
 /***/ function(module, exports) {
 
 	/*
@@ -13297,7 +13225,7 @@
 
 
 /***/ },
-/* 15 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -13546,6 +13474,168 @@
 		if(oldSrc)
 			URL.revokeObjectURL(oldSrc);
 	}
+
+
+/***/ },
+/* 13 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	// <template>
+	// 	<div class="title">
+	// 		<h2>{{title}}</h2>
+	// 		<ul>
+	// 			<li>
+	// 				<a href="javascript:void(0)">vcTab</a>
+	// 			</li>
+	// 			<li>
+	// 				<a href="javascript:void(0)">vcPagination</a>
+	// 			</li>
+	// 			<li>
+	// 				<a href="javascript:void(0)">vcModal</a>
+	// 			</li>
+	// 			<li>
+	// 				<a href="javascript:void(0)">vcDateRangePicker</a>
+	// 			</li>
+	// 			<li>
+	// 				<a href="javascript:void(0)">vcEchart</a>
+	// 			</li>
+	// 			<li>
+	// 				<a href="javascript:void(0)">vcTable</a>
+	// 			</li>
+	// 		</ul>
+	// 		<div>
+	// 			<button class="btn btn-success">
+	// 				<span class="icon">
+	// 			        <i class="glyphicon glyphicon-github">github</i>
+	// 			      </span>
+	// 			</button>
+	// 			<button class="btn btn-success">
+	// 				下载
+	// 			</button>
+	// 		</div>
+	// 	</div>
+	// </template>
+	// <script>
+	exports.default = {
+		data: function data() {
+			return {
+				title: 'vc-bootstrap!'
+			};
+		}
+	};
+	// </script>
+	// <style scoped>
+	// 	.title{
+	// 		padding-top: 100px;
+	// 		text-align: center;
+	// 		h2{
+	// 			font-size: 48px;
+	// 		}
+	// 	}
+	// 	ul{
+	// 		padding: 0;
+	// 		margin: 20px 0;
+	// 		li{
+	// 			list-style: none;
+	// 			margin: 0;
+	// 			padding: 5;
+	// 			font-size: 18px;
+	// 		}
+	// 	}
+	// </style>
+
+/***/ },
+/* 14 */
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"title\" _v-5db9f3c7=\"\">\n\t\t<h2 _v-5db9f3c7=\"\">{{title}}</h2>\n\t\t<ul _v-5db9f3c7=\"\">\n\t\t\t<li _v-5db9f3c7=\"\">\n\t\t\t\t<a href=\"javascript:void(0)\" _v-5db9f3c7=\"\">vcTab</a>\n\t\t\t</li>\n\t\t\t<li _v-5db9f3c7=\"\">\n\t\t\t\t<a href=\"javascript:void(0)\" _v-5db9f3c7=\"\">vcPagination</a>\n\t\t\t</li>\n\t\t\t<li _v-5db9f3c7=\"\">\n\t\t\t\t<a href=\"javascript:void(0)\" _v-5db9f3c7=\"\">vcModal</a>\n\t\t\t</li>\n\t\t\t<li _v-5db9f3c7=\"\">\n\t\t\t\t<a href=\"javascript:void(0)\" _v-5db9f3c7=\"\">vcDateRangePicker</a>\n\t\t\t</li>\n\t\t\t<li _v-5db9f3c7=\"\">\n\t\t\t\t<a href=\"javascript:void(0)\" _v-5db9f3c7=\"\">vcEchart</a>\n\t\t\t</li>\n\t\t\t<li _v-5db9f3c7=\"\">\n\t\t\t\t<a href=\"javascript:void(0)\" _v-5db9f3c7=\"\">vcTable</a>\n\t\t\t</li>\n\t\t</ul>\n\t\t<div _v-5db9f3c7=\"\">\n\t\t\t<button class=\"btn btn-success\" _v-5db9f3c7=\"\">\n\t\t\t\t<span class=\"icon\" _v-5db9f3c7=\"\">\n\t\t\t        <i class=\"glyphicon glyphicon-github\" _v-5db9f3c7=\"\">github</i>\n\t\t\t      </span>\n\t\t\t</button>\n\t\t\t<button class=\"btn btn-success\" _v-5db9f3c7=\"\">\n\t\t\t\t下载\n\t\t\t</button>\n\t\t</div>\n\t</div>";
+
+/***/ },
+/* 15 */
+/***/ function(module, exports) {
+
+	module.exports = function anonymous(locals, escape, include, rethrow) {
+	    rethrow = rethrow || function rethrow(err, str, filename, lineno) {
+	        var lines = str.split("\n");
+	        var start = Math.max(lineno - 3, 0);
+	        var end = Math.min(lines.length, lineno + 3);
+	        var context = lines.slice(start, end).map(function(line, i) {
+	            var curr = i + start + 1;
+	            return (curr == lineno ? " >> " : "    ") + curr + "| " + line;
+	        }).join("\n");
+	        err.path = filename;
+	        err.message = (filename || "ejs") + ":" + lineno + "\n" + context + "\n\n" + err.message;
+	        throw err;
+	    };
+	    escape = escape || function(markup) {
+	        return markup == undefined ? "" : String(markup).replace(_MATCH_HTML, encode_char);
+	    };
+	    var _ENCODE_HTML_RULES = {
+	        "&": "&amp;",
+	        "<": "&lt;",
+	        ">": "&gt;",
+	        '"': "&#34;",
+	        "'": "&#39;"
+	    }, _MATCH_HTML = /[&<>'"]/g;
+	    function encode_char(c) {
+	        return _ENCODE_HTML_RULES[c] || c;
+	    }
+	    var __line = 1, __lines = '<div class="container">\n    <v-hello></v-hello>\n</div>', __filename = "src/pages/index/index.ejs";
+	    try {
+	        var __output = [], __append = __output.push.bind(__output);
+	        with (locals || {}) {
+	            __append('<div class="container">\n    <v-hello></v-hello>\n</div>');
+	            __line = 3;
+	        }
+	        return __output.join("");
+	    } catch (e) {
+	        rethrow(e, __lines, __filename, __line);
+	    }
+	}
+
+/***/ },
+/* 16 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(17);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(12)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/less-loader/index.js!./index.less", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/less-loader/index.js!./index.less");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 17 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(11)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "html,\nbody {\n  height: 100%;\n}\n", ""]);
+	
+	// exports
 
 
 /***/ }

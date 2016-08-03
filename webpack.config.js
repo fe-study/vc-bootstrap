@@ -6,8 +6,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: './',
-    publicPath: './doc/static',
-    filename: 'js/build.js',
+    publicPath: './',
+    filename: 'doc/static/build/build.js',
   },
   resolve: {
     root: path.resolve('./')
@@ -25,6 +25,12 @@ module.exports = {
       {test: /\.scss$/, loader: "style!css!sass"},
       {test: /\.less$/, loader: "style-loader!css-loader!less-loader"},
     ]
+  },
+  vue: {
+    loaders: {
+      css: 'style!css!less',
+      js: 'babel'
+    }
   },
   babel: {
   presets: ['es2015'],
