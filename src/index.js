@@ -1,5 +1,6 @@
-import vHello from './components/helloworld/helloworld.vue'
+import router from './router/index.js'
+import Vue from 'vue'
 
-export {
-	vHello
-}
+Vue.config.devtools = true
+
+router.init(Vue.extend({}), '#vcBootstrap')

@@ -1,14 +1,13 @@
 var webpack = require('webpack')
 var path = require('path')
+var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: './dist',
-    publicPath: '/',
-    filename: 'build.js',
-    library: 'VueComponentsName',
-    libraryTarget: 'umd'
+    path: './',
+    publicPath: './doc/static',
+    filename: 'js/build.js',
   },
   resolve: {
     root: path.resolve('./')
@@ -29,8 +28,17 @@ module.exports = {
   },
   babel: {
   presets: ['es2015'],
-  plugins: ['transform-runtime']
-},
+  plugins: [
+    'transform-runtime'
+    ]
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      hash: true,
+      template: './src/index.ejs', // Load a custom template (ejs by default see the FAQ for details)
+    })
+    ],
   devtool: 'source-map'
 };
 

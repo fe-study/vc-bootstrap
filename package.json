@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "vue component skeleton",
   "dependencies": {
-    "vue": "^1.0.8"
+    "html-webpack-plugin": "^2.22.0",
+    "vue": "^1.0.8",
+    "vue-router": "^0.7.13"
   },
   "devDependencies": {
     "babel-core": "^6.1.21",
@@ -25,9 +27,9 @@
     "webpack-dev-server": "^1.12.0"
   },
   "scripts": {
-    "build": " webpack --progress --hide-modules ",
+    "build": " webpack -w --progress --hide-modules ",
     "example": " webpack --progress --hide-modules --config  webpack.example.js",
     "publish": "webpack --progress --hide-modules --config  webpack.production.js",
-    "start": "webpack-dev-server --inline --hot --quiet"
+    "start": "webpack-dev-server --inline --hot --quiet --content-base ./"
   }
 }

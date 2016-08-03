@@ -1,13 +1,13 @@
 <template>
-	<div class="hello">
-		<h2>{{hello}}</h2>
+	<div class="title">
+		<h2>{{title}}</h2>
 	</div>
 </template>
 <script>
 	export default {
 		data () {
 			return {
-				hello: 'helloworld'
+				title: 'vc-bootstrap!'
 			}
 		}
 	}
