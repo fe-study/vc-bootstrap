@@ -3,10 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>example</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 <body>
 	<div id='app'>
-		<v-hello></v-hello>
+        <div class="container">
+            <vc-hello></vc-hello>
+            <vc-pagination
+            :total='total'
+            :per-page='perPage'
+            :on-page-change='onPageChange'></vc-pagination>
+        </div>
 	</div>
 	<script src='../dist/example.js'></script>
 </body>

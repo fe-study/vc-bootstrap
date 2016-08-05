@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "vue component skeleton",
   "dependencies": {
+    "vc-pagination-bs": "0.0.2",
     "vue": "^1.0.8"
   },
   "devDependencies": {
