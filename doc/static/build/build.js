@@ -13053,7 +13053,7 @@
 	      name: 'home',
 	      component: _index2.default,
 	      subRoutes: {
-	        '/index': {
+	        '/': {
 	          name: 'index',
 	          component: _helloworld2.default
 	        },
@@ -13117,7 +13117,9 @@
 	    },
 	    methods: {
 	        linkTo: function linkTo(path) {
-	            this.$route.router.go(path);
+	            this.$route.router.go({
+	                name: path
+	            });
 	        }
 	    }
 	});

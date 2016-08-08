@@ -16,7 +16,9 @@ export default Vue.extend({
     },
     methods: {
         linkTo (path){
-            this.$route.router.go(path)
+            this.$route.router.go({
+                name: path
+            })
         }
     }
 })

@@ -12,7 +12,7 @@ export default function (router) {
       name: 'home',
       component: vApp,
       subRoutes: {
-        '/index': {
+        '/': {
           name: 'index',
           component: vHello
         },
