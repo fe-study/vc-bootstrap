@@ -1,3 +1,22 @@
-<div class="container">
-    <v-hello></v-hello>
+<div class="wrap">
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <h2>vc-bs</h2>
+                </div>
+                <div class="col-md-10">
+                    <ul>
+                        <li><a href="/">home</a></li>
+                        <li><a href="/#!/document">document</a></li>
+                        <!-- <li><a href="/about">about</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <router-view></router-view>
+    </div>
 </div>
+<v-footer></v-footer>

@@ -54,6 +54,8 @@
 	
 	var _vue2 = _interopRequireDefault(_vue);
 	
+	__webpack_require__(18);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	_vue2.default.config.devtools = true;
@@ -13051,10 +13053,14 @@
 	      name: 'home',
 	      component: _index2.default,
 	      subRoutes: {
-	        //'/': {
-	        //name: 'home',
-	        //component: vIndex
-	        //}
+	        '/': {
+	          name: 'index',
+	          component: _helloworld2.default
+	        },
+	        '/document': {
+	          name: 'document',
+	          component: _doc2.default
+	        }
 	      }
 	    }
 	  });
@@ -13063,6 +13069,14 @@
 	var _index = __webpack_require__(7);
 	
 	var _index2 = _interopRequireDefault(_index);
+	
+	var _helloworld = __webpack_require__(8);
+	
+	var _helloworld2 = _interopRequireDefault(_helloworld);
+	
+	var _doc = __webpack_require__(24);
+	
+	var _doc2 = _interopRequireDefault(_doc);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13076,9 +13090,9 @@
 	    value: true
 	});
 	
-	var _helloworld = __webpack_require__(8);
+	var _footer = __webpack_require__(20);
 	
-	var _helloworld2 = _interopRequireDefault(_helloworld);
+	var _footer2 = _interopRequireDefault(_footer);
 	
 	var _vue = __webpack_require__(3);
 	
@@ -13099,7 +13113,7 @@
 	    },
 	
 	    components: {
-	        vHello: _helloworld2.default
+	        vFooter: _footer2.default
 	    }
 	});
 
@@ -13487,44 +13501,28 @@
 	});
 	// <template>
 	// 	<div class="title">
-	// 		<h2>{{title}}</h2>
-	// 		<ul>
-	// 			<li>
-	// 				<a href="javascript:void(0)">vcTab</a>
-	// 			</li>
-	// 			<li>
-	// 				<a href="javascript:void(0)">vcPagination</a>
-	// 			</li>
-	// 			<li>
-	// 				<a href="javascript:void(0)">vcModal</a>
-	// 			</li>
-	// 			<li>
-	// 				<a href="javascript:void(0)">vcDateRangePicker</a>
-	// 			</li>
-	// 			<li>
-	// 				<a href="javascript:void(0)">vcEchart</a>
-	// 			</li>
-	// 			<li>
-	// 				<a href="javascript:void(0)">vcTable</a>
-	// 			</li>
-	// 		</ul>
-	// 		<div>
-	// 			<button class="btn btn-success">
-	// 				<span class="icon">
-	// 			        <i class="glyphicon glyphicon-github">github</i>
-	// 			      </span>
-	// 			</button>
-	// 			<button class="btn btn-success">
-	// 				下载
-	// 			</button>
+	// 		<div class="header-content">
+	// 			<h2>vc-bootstrap</h2>
+	// 			<p>Support by bootstrap@3.x and vue@1.x!</p>
 	// 		</div>
+	// 		<ul style="">
+	// 			<li>
+	// 				<a class="button default" 
+	// 					href="https://github.com/iwaimai-bi-fe/vc-bootstrap"
+	// 					target="_blank">github</a>
+	// 			</li>
+	// 			<li>
+	// 				<a class="button disabled" href="javascript:void(0)">download</a>
+	// 			</li>
+	
+	// 		</ul>
 	// 	</div>
 	// </template>
 	// <script>
 	exports.default = {
 		data: function data() {
 			return {
-				title: 'vc-bootstrap!'
+				title: ''
 			};
 		}
 	};
@@ -13553,7 +13551,7 @@
 /* 14 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"title\" _v-5db9f3c7=\"\">\n\t\t<h2 _v-5db9f3c7=\"\">{{title}}</h2>\n\t\t<ul _v-5db9f3c7=\"\">\n\t\t\t<li _v-5db9f3c7=\"\">\n\t\t\t\t<a href=\"javascript:void(0)\" _v-5db9f3c7=\"\">vcTab</a>\n\t\t\t</li>\n\t\t\t<li _v-5db9f3c7=\"\">\n\t\t\t\t<a href=\"javascript:void(0)\" _v-5db9f3c7=\"\">vcPagination</a>\n\t\t\t</li>\n\t\t\t<li _v-5db9f3c7=\"\">\n\t\t\t\t<a href=\"javascript:void(0)\" _v-5db9f3c7=\"\">vcModal</a>\n\t\t\t</li>\n\t\t\t<li _v-5db9f3c7=\"\">\n\t\t\t\t<a href=\"javascript:void(0)\" _v-5db9f3c7=\"\">vcDateRangePicker</a>\n\t\t\t</li>\n\t\t\t<li _v-5db9f3c7=\"\">\n\t\t\t\t<a href=\"javascript:void(0)\" _v-5db9f3c7=\"\">vcEchart</a>\n\t\t\t</li>\n\t\t\t<li _v-5db9f3c7=\"\">\n\t\t\t\t<a href=\"javascript:void(0)\" _v-5db9f3c7=\"\">vcTable</a>\n\t\t\t</li>\n\t\t</ul>\n\t\t<div _v-5db9f3c7=\"\">\n\t\t\t<button class=\"btn btn-success\" _v-5db9f3c7=\"\">\n\t\t\t\t<span class=\"icon\" _v-5db9f3c7=\"\">\n\t\t\t        <i class=\"glyphicon glyphicon-github\" _v-5db9f3c7=\"\">github</i>\n\t\t\t      </span>\n\t\t\t</button>\n\t\t\t<button class=\"btn btn-success\" _v-5db9f3c7=\"\">\n\t\t\t\t下载\n\t\t\t</button>\n\t\t</div>\n\t</div>";
+	module.exports = "<div class=\"title\" _v-5db9f3c7=\"\">\n\t\t<div class=\"header-content\" _v-5db9f3c7=\"\">\n\t\t\t<h2 _v-5db9f3c7=\"\">vc-bootstrap</h2>\n\t\t\t<p _v-5db9f3c7=\"\">Support by bootstrap@3.x and vue@1.x!</p>\n\t\t</div>\n\t\t<ul style=\"\" _v-5db9f3c7=\"\">\n\t\t\t<li _v-5db9f3c7=\"\">\n\t\t\t\t<a class=\"button default\" href=\"https://github.com/iwaimai-bi-fe/vc-bootstrap\" target=\"_blank\" _v-5db9f3c7=\"\">github</a>\n\t\t\t</li>\n\t\t\t<li _v-5db9f3c7=\"\">\n\t\t\t\t<a class=\"button disabled\" href=\"javascript:void(0)\" _v-5db9f3c7=\"\">download</a>\n\t\t\t</li>\n\t\n\t\t</ul>\n\t</div>";
 
 /***/ },
 /* 15 */
@@ -13585,12 +13583,12 @@
 	    function encode_char(c) {
 	        return _ENCODE_HTML_RULES[c] || c;
 	    }
-	    var __line = 1, __lines = '<div class="container">\n    <v-hello></v-hello>\n</div>', __filename = "src/pages/index/index.ejs";
+	    var __line = 1, __lines = '<div class="wrap">\n    <div class="header">\n        <div class="container">\n            <div class="row">\n                <div class="col-md-2">\n                    <h2>vc-bs</h2>\n                </div>\n                <div class="col-md-10">\n                    <ul>\n                        <li><a href="/">home</a></li>\n                        <li><a href="/#!/document">document</a></li>\n                        <!-- <li><a href="/about">about</a></li> -->\n                    </ul>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class="container">\n        <router-view></router-view>\n    </div>\n</div>\n<v-footer></v-footer>', __filename = "src/pages/index/index.ejs";
 	    try {
 	        var __output = [], __append = __output.push.bind(__output);
 	        with (locals || {}) {
-	            __append('<div class="container">\n    <v-hello></v-hello>\n</div>');
-	            __line = 3;
+	            __append('<div class="wrap">\n    <div class="header">\n        <div class="container">\n            <div class="row">\n                <div class="col-md-2">\n                    <h2>vc-bs</h2>\n                </div>\n                <div class="col-md-10">\n                    <ul>\n                        <li><a href="/">home</a></li>\n                        <li><a href="/#!/document">document</a></li>\n                        <!-- <li><a href="/about">about</a></li> -->\n                    </ul>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class="container">\n        <router-view></router-view>\n    </div>\n</div>\n<v-footer></v-footer>');
+	            __line = 22;
 	        }
 	        return __output.join("");
 	    } catch (e) {
@@ -13633,7 +13631,379 @@
 	
 	
 	// module
-	exports.push([module.id, "html,\nbody {\n  height: 100%;\n}\n", ""]);
+	exports.push([module.id, "html,\nbody {\n  height: 100%;\n  background-color: #F5F5F5;\n}\nli {\n  list-style: none;\n}\na {\n  text-decoration: none;\n}\na:hover {\n  text-decoration: none;\n}\n.wrap {\n  height: 100%;\n  min-height: 600px;\n  margin-bottom: -200px;\n}\n.header {\n  height: 70px;\n  line-height: 70px;\n  color: #464646;\n  background-color: #fff;\n  position: relative;\n}\n.header h2 {\n  text-transform: uppercase;\n}\n.header ul {\n  float: right;\n}\n.header li {\n  display: inline-block;\n}\n.header li a {\n  padding: 5px;\n  color: #0dc4a3;\n  letter-spacing: 1px;\n  text-transform: uppercase;\n}\n.header li a:hover {\n  color: #666666;\n}\n", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 18 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(19);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(12)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/less-loader/index.js!./index.less", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/less-loader/index.js!./index.less");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 19 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(11)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "/*\n * site button\n */\n.button {\n  display: inline-block;\n  width: 200px;\n  height: 35px;\n  line-height: 35px;\n  border-radius: 3px;\n  box-sizing: border-box;\n  color: #fff;\n  background-color: #464646;\n  margin: 10px 0;\n}\n.button:hover {\n  color: #fff;\n  background-color: #666666;\n}\n.button.default {\n  background-color: #0dc4a3;\n}\n.button.default:hover {\n  color: #fff;\n  background-color: #666666;\n}\n", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 20 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _footer = __webpack_require__(21);
+	
+	var _footer2 = _interopRequireDefault(_footer);
+	
+	__webpack_require__(22);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = {
+	    template: (0, _footer2.default)(),
+	    data: function data() {
+	        return {};
+	    }
+	};
+
+/***/ },
+/* 21 */
+/***/ function(module, exports) {
+
+	module.exports = function anonymous(locals, escape, include, rethrow) {
+	    rethrow = rethrow || function rethrow(err, str, filename, lineno) {
+	        var lines = str.split("\n");
+	        var start = Math.max(lineno - 3, 0);
+	        var end = Math.min(lines.length, lineno + 3);
+	        var context = lines.slice(start, end).map(function(line, i) {
+	            var curr = i + start + 1;
+	            return (curr == lineno ? " >> " : "    ") + curr + "| " + line;
+	        }).join("\n");
+	        err.path = filename;
+	        err.message = (filename || "ejs") + ":" + lineno + "\n" + context + "\n\n" + err.message;
+	        throw err;
+	    };
+	    escape = escape || function(markup) {
+	        return markup == undefined ? "" : String(markup).replace(_MATCH_HTML, encode_char);
+	    };
+	    var _ENCODE_HTML_RULES = {
+	        "&": "&amp;",
+	        "<": "&lt;",
+	        ">": "&gt;",
+	        '"': "&#34;",
+	        "'": "&#39;"
+	    }, _MATCH_HTML = /[&<>'"]/g;
+	    function encode_char(c) {
+	        return _ENCODE_HTML_RULES[c] || c;
+	    }
+	    var __line = 1, __lines = '<div class="footer">\n    <div class="container">\n        <div class="footer-content">\n            <div style="flex: 1 0 auto;"></div>\n            <div style="width: 300px;flex: 0 0 auto;">\n                Contacts\n                <ul>\n                    <li>\n                        <a href="javascript:void(0);">yangxiaofupl@163.com</a>\n                    </li>\n                    <li>\n                        <a href="javascript:void(0);">indexxuan@gmail.com</a>\n                    </li>\n                </ul>\n            </div>\n            <div style="width: 300px;flex: 0 0 auto;">\n                Resources\n                <ul>\n                    <li>\n                        <a href="https://github.com/iwaimai-bi-fe/vc-bootstrap">github</a>\n                    </li>\n                    <li>\n                        <a href="https://www.npmjs.com/~yangxiaofu">npm~yangxiaofu</a>\n                    </li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</div>', __filename = "src/components/footer/footer.ejs";
+	    try {
+	        var __output = [], __append = __output.push.bind(__output);
+	        with (locals || {}) {
+	            __append('<div class="footer">\n    <div class="container">\n        <div class="footer-content">\n            <div style="flex: 1 0 auto;"></div>\n            <div style="width: 300px;flex: 0 0 auto;">\n                Contacts\n                <ul>\n                    <li>\n                        <a href="javascript:void(0);">yangxiaofupl@163.com</a>\n                    </li>\n                    <li>\n                        <a href="javascript:void(0);">indexxuan@gmail.com</a>\n                    </li>\n                </ul>\n            </div>\n            <div style="width: 300px;flex: 0 0 auto;">\n                Resources\n                <ul>\n                    <li>\n                        <a href="https://github.com/iwaimai-bi-fe/vc-bootstrap">github</a>\n                    </li>\n                    <li>\n                        <a href="https://www.npmjs.com/~yangxiaofu">npm~yangxiaofu</a>\n                    </li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</div>');
+	            __line = 29;
+	        }
+	        return __output.join("");
+	    } catch (e) {
+	        rethrow(e, __lines, __filename, __line);
+	    }
+	}
+
+/***/ },
+/* 22 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(23);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(12)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/less-loader/index.js!./footer.less", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/less-loader/index.js!./footer.less");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 23 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(11)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".footer {\n  background-color: #565656;\n  box-sizing: border-box;\n  height: 200px;\n  padding: 50px 0;\n}\n.footer .footer-content {\n  display: flex;\n  color: #fff;\n}\n.footer .footer-content ul {\n  margin: 0;\n  padding: 0;\n}\n.footer .footer-content ul li {\n  margin: 0;\n  padding: 0;\n}\n.footer .footer-content a {\n  color: #fff;\n  opacity: 0.4;\n}\n.footer .footer-content a:hover {\n  color: #fff;\n  opacity: 1;\n}\n", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 24 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _doc = __webpack_require__(25);
+	
+	var _doc2 = _interopRequireDefault(_doc);
+	
+	__webpack_require__(26);
+	
+	var _propertyLayout = __webpack_require__(28);
+	
+	var _propertyLayout2 = _interopRequireDefault(_propertyLayout);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = {
+	    template: (0, _doc2.default)(),
+	    data: function data() {
+	        return {};
+	    },
+	
+	    components: {
+	        vlayout: _propertyLayout2.default
+	    }
+	};
+
+/***/ },
+/* 25 */
+/***/ function(module, exports) {
+
+	module.exports = function anonymous(locals, escape, include, rethrow) {
+	    rethrow = rethrow || function rethrow(err, str, filename, lineno) {
+	        var lines = str.split("\n");
+	        var start = Math.max(lineno - 3, 0);
+	        var end = Math.min(lines.length, lineno + 3);
+	        var context = lines.slice(start, end).map(function(line, i) {
+	            var curr = i + start + 1;
+	            return (curr == lineno ? " >> " : "    ") + curr + "| " + line;
+	        }).join("\n");
+	        err.path = filename;
+	        err.message = (filename || "ejs") + ":" + lineno + "\n" + context + "\n\n" + err.message;
+	        throw err;
+	    };
+	    escape = escape || function(markup) {
+	        return markup == undefined ? "" : String(markup).replace(_MATCH_HTML, encode_char);
+	    };
+	    var _ENCODE_HTML_RULES = {
+	        "&": "&amp;",
+	        "<": "&lt;",
+	        ">": "&gt;",
+	        '"': "&#34;",
+	        "'": "&#39;"
+	    }, _MATCH_HTML = /[&<>'"]/g;
+	    function encode_char(c) {
+	        return _ENCODE_HTML_RULES[c] || c;
+	    }
+	    var __line = 1, __lines = "<div class=\"document\">\n    <vlayout>\n        <div slot='title'>\n            <h3>v-tab-bs</h3>\n        </div>\n        <div slot='body'>\n            vue tab 组件，简单好用.\n        </div>\n    </vlayout>\n    <vlayout>\n        <div slot='title'>\n            <h3>v-pagination-bs</h3>\n        </div>\n        <div slot='body'>\n            vue tab 组件，简单好用.\n        </div>\n    </vlayout>\n    <vlayout>\n        <div slot='title'>\n            <h3>v-modal-bs</h3>\n        </div>\n        <div slot='body'>\n            vue tab 组件，简单好用.\n        </div>\n    </vlayout>\n</div>", __filename = "src/pages/doc/doc.ejs";
+	    try {
+	        var __output = [], __append = __output.push.bind(__output);
+	        with (locals || {}) {
+	            __append("<div class=\"document\">\n    <vlayout>\n        <div slot='title'>\n            <h3>v-tab-bs</h3>\n        </div>\n        <div slot='body'>\n            vue tab 组件，简单好用.\n        </div>\n    </vlayout>\n    <vlayout>\n        <div slot='title'>\n            <h3>v-pagination-bs</h3>\n        </div>\n        <div slot='body'>\n            vue tab 组件，简单好用.\n        </div>\n    </vlayout>\n    <vlayout>\n        <div slot='title'>\n            <h3>v-modal-bs</h3>\n        </div>\n        <div slot='body'>\n            vue tab 组件，简单好用.\n        </div>\n    </vlayout>\n</div>");
+	            __line = 26;
+	        }
+	        return __output.join("");
+	    } catch (e) {
+	        rethrow(e, __lines, __filename, __line);
+	    }
+	}
+
+/***/ },
+/* 26 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(27);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(12)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/less-loader/index.js!./doc.less", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/less-loader/index.js!./doc.less");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 27 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(11)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 28 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _propertyLayout = __webpack_require__(29);
+	
+	var _propertyLayout2 = _interopRequireDefault(_propertyLayout);
+	
+	__webpack_require__(30);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = {
+	    template: (0, _propertyLayout2.default)(),
+	    data: function data() {
+	        return {};
+	    }
+	};
+
+/***/ },
+/* 29 */
+/***/ function(module, exports) {
+
+	module.exports = function anonymous(locals, escape, include, rethrow) {
+	    rethrow = rethrow || function rethrow(err, str, filename, lineno) {
+	        var lines = str.split("\n");
+	        var start = Math.max(lineno - 3, 0);
+	        var end = Math.min(lines.length, lineno + 3);
+	        var context = lines.slice(start, end).map(function(line, i) {
+	            var curr = i + start + 1;
+	            return (curr == lineno ? " >> " : "    ") + curr + "| " + line;
+	        }).join("\n");
+	        err.path = filename;
+	        err.message = (filename || "ejs") + ":" + lineno + "\n" + context + "\n\n" + err.message;
+	        throw err;
+	    };
+	    escape = escape || function(markup) {
+	        return markup == undefined ? "" : String(markup).replace(_MATCH_HTML, encode_char);
+	    };
+	    var _ENCODE_HTML_RULES = {
+	        "&": "&amp;",
+	        "<": "&lt;",
+	        ">": "&gt;",
+	        '"': "&#34;",
+	        "'": "&#39;"
+	    }, _MATCH_HTML = /[&<>'"]/g;
+	    function encode_char(c) {
+	        return _ENCODE_HTML_RULES[c] || c;
+	    }
+	    var __line = 1, __lines = '<div class="property-wrap">\n    <div class="property-header">\n        <div class="title">\n            <slot name="title"></slot>\n        </div>\n    </div>\n    <div class="property-body">\n        <slot name=\'body\'></slot>\n    </div>\n</div>', __filename = "src/components/common/propertyLayout/propertyLayout.ejs";
+	    try {
+	        var __output = [], __append = __output.push.bind(__output);
+	        with (locals || {}) {
+	            __append('<div class="property-wrap">\n    <div class="property-header">\n        <div class="title">\n            <slot name="title"></slot>\n        </div>\n    </div>\n    <div class="property-body">\n        <slot name=\'body\'></slot>\n    </div>\n</div>');
+	            __line = 10;
+	        }
+	        return __output.join("");
+	    } catch (e) {
+	        rethrow(e, __lines, __filename, __line);
+	    }
+	}
+
+/***/ },
+/* 30 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(31);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(12)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../../node_modules/css-loader/index.js!./../../../../node_modules/less-loader/index.js!./propertyLayout.less", function() {
+				var newContent = require("!!./../../../../node_modules/css-loader/index.js!./../../../../node_modules/less-loader/index.js!./propertyLayout.less");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 31 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(11)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".property {\n  padding: 5px;\n  border: 1px solid #eee;\n}\n.property-wrap {\n  background-color: #fff;\n  margin: 10px 0;\n  padding: 10px;\n  font-size: 14px;\n  border-radius: 1px;\n}\n.property-wrap .property-header {\n  padding: 5px;\n  border-bottom: 1px solid #ddd;\n}\n.property-wrap .property-header .title {\n  border-left: 2px solid #1fc8db;\n}\n.property-wrap .property-header .title h3 {\n  font-size: 14px;\n  margin-top: 0px;\n  margin-bottom: 0px;\n  margin-left: 5px;\n}\n.property-wrap .property-body {\n  padding: 10px 5px 5px 5px;\n}\n", ""]);
 	
 	// exports
 

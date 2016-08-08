@@ -1,43 +1,27 @@
 <template>
 	<div class="title">
-		<h2>{{title}}</h2>
-		<ul>
-			<li>
-				<a href="javascript:void(0)">vcTab</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">vcPagination</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">vcModal</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">vcDateRangePicker</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">vcEchart</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">vcTable</a>
-			</li>
-		</ul>
-		<div>
-			<button class="btn btn-success">
-				<span class="icon">
-			        <i class="glyphicon glyphicon-github">github</i>
-			      </span>
-			</button>
-			<button class="btn btn-success">
-				下载
-			</button>
+		<div class="header-content">
+			<h2>vc-bootstrap</h2>
+			<p>Support by bootstrap@3.x and vue@1.x!</p>
 		</div>
+		<ul style="">
+			<li>
+				<a class="button default" 
+					href="https://github.com/iwaimai-bi-fe/vc-bootstrap"
+					target="_blank">github</a>
+			</li>
+			<li>
+				<a class="button disabled" href="javascript:void(0)">download</a>
+			</li>
+	
+		</ul>
 	</div>
 </template>
 <script>
 	export default {
 		data () {
 			return {
-				title: 'vc-bootstrap!'
+				title: ''
 			}
 		}
 	}

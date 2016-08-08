@@ -1,4 +1,5 @@
-import vHello from '../../components/helloworld/helloworld.vue'
+import vFooter from '../../components/footer/footer.js' 
+
 import Vue from 'vue'
 import _ejs from './index.ejs'
 import './index.less'
@@ -11,6 +12,6 @@ export default Vue.extend({
         }
     },
     components: {
-        vHello
+        vFooter
     }
 })
