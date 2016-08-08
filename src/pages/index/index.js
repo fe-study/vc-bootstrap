@@ -13,5 +13,10 @@ export default Vue.extend({
     },
     components: {
         vFooter
+    },
+    methods: {
+        linkTo (path){
+            this.$route.router.go(path)
+        }
     }
 })
