@@ -6,8 +6,8 @@ module.exports = {
   output: {
     path: './dist',
     publicPath: '/',
-    filename: 'build.js',
-    library: 'VueComponentsName',
+    filename: 'vc-bootstrap.js',
+    library: 'vcBootstrap',
     libraryTarget: 'umd'
   },
   resolve: {

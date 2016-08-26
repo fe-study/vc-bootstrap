@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["VueComponentsName"] = factory();
+		exports["vcBootstrap"] = factory();
 	else
-		root["VueComponentsName"] = factory();
+		root["vcBootstrap"] = factory();
 })(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -5832,4 +5832,4 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ ])
 });
 ;
-//# sourceMappingURL=build.js.map
+//# sourceMappingURL=vc-bootstrap.js.map

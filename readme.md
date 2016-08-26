@@ -12,6 +12,10 @@
 * vcEchart
 * vcSelect
 
+### how to use?
+
+* [introduction doc](https://iwaimai-bi-fe.github.io/vc-bootstrap-doc/guide/)
+
 ### 如何参与
 
 1. 安装 iat 命令行工具一键创建组件框架

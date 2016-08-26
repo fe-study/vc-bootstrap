@@ -8,7 +8,7 @@ import {
 		vcEasyclearinput,
 		vcAutocomplete
 
-	} from '../dist/build.js'
+	} from '../dist/vc-bootstrap.js'
 
 new Vue({
 	el: '#app',
