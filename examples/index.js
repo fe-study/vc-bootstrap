@@ -1,7 +1,13 @@
 import Vue from 'vue'
 import {
 		vcHello,
-		vcPagination
+		vcPagination,
+		vcTabs,
+		vcTable,
+		vcModal,
+		vcEasyclearinput,
+		vcAutocomplete
+
 	} from '../dist/build.js'
 
 new Vue({
@@ -21,5 +27,17 @@ new Vue({
 		onPageChange (page) {
 
 		}
+	},
+	ready () {
+		console.log({
+		vcHello,
+		vcPagination,
+		vcTabs,
+		vcTable,
+		vcModal,
+		vcEasyclearinput,
+		vcAutocomplete
+
+	})		
 	}
 })

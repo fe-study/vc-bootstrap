@@ -1,10 +1,17 @@
 {
   "name": "vc-bootstrap",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "vue component skeleton",
   "dependencies": {
     "vc-pagination-bs": "0.0.2",
-    "vue": "^1.0.8"
+    "vue": "^1.0.8",
+    "vc-pagination": "^0.1.4",
+    "vc-table": "latest",
+    "vc-backtop": "latest",
+    "vc-autocomplete": "latest",
+    "vc-modal": "latest",
+    "vc-easyclearinput": "latest",
+    "vc-tabs": "latest"
   },
   "devDependencies": {
     "babel-core": "^6.1.21",
@@ -30,5 +37,14 @@
     "example": " webpack --progress --hide-modules --config  webpack.example.js",
     "publish": "webpack --progress --hide-modules --config  webpack.production.js",
     "start": "webpack-dev-server --inline --hot --quiet"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iwaimai-bi-fe/vc-bootstrap"
+  },
+  "bugs": {
+    "url": "https://github.com/iwaimai-bi-fe/vc-bootstrap/issues"
+  },
+  "homepage": "https://iwaimai-bi-fe.github.io/vc-bootstrap-doc/",
 }
+
